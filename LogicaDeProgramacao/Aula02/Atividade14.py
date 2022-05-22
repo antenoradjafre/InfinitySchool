@@ -22,4 +22,3 @@ if sim <= 2:
     print("Ficar em repouso e acompanhar evolução dos sintomas")
 else:
     print("Paciente com degue procure um médico")
-
