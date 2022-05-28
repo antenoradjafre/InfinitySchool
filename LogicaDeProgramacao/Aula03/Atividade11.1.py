@@ -1,6 +1,6 @@
 import random
 
-escolhido = random.randrange(1, 10)
+escolhido = random.randint(1, 10)
 contador = 0
 while True:
     numero = int(input("Insira um número entre 1 e 10: "))
