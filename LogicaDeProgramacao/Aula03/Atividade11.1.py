@@ -1,6 +1,7 @@
 import random
 
-escolhido = random.randrange(0,10)
+escolhido = random.randrange(1, 10)
+contador = 0
 while True:
     numero = int(input("Insira um número entre 1 e 10: "))
     if numero > escolhido:
@@ -10,3 +11,5 @@ while True:
     elif numero == escolhido:
         print("Acertou Mizeravi!!!!!!!")
         break
+
+print(contador)
