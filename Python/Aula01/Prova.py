@@ -5,7 +5,23 @@ def calculaSeculo(ano):
         funSeculo = int(ano / 100 + 1)
     return funSeculo
 
+
+def intParaRoman(num):
+    valor = ''
+    cont = 0
+    numeros = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    romanos = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+    while num > 0:
+        for i in range(num // numeros[cont]):
+            valor += romanos[cont]
+            num -= numeros[cont]
+        cont += 1
+    return valor
+
+
 ano = int(input("Digite um ano: "))
 seculo = calculaSeculo(ano)
-print(f'O século é: {seculo}')
+seculoRomano = intParaRoman(seculo)
+print(f'O século é: {seculoRomano}')
+
 
